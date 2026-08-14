@@ -1058,3 +1058,9 @@ body.menu-open::before{display:none !important}
     font-size:14px !important;
   }
 }
+
+/* V12 particle polish only */
+#heroCanvas,#storyCanvas{filter:saturate(.82) contrast(1.04)}
+@media(prefers-reduced-motion:reduce){
+  #heroCanvas,#storyCanvas{opacity:.72}
+}
