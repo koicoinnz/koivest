@@ -853,3 +853,208 @@ body.menu-open::before{display:none !important}
   .kv-contact h2{font-size:clamp(60px,17vw,90px) !important}
   .kv-email{font-size:clamp(23px,6.5vw,34px) !important}
 }
+
+
+/* =========================================================
+   V10 — CONTACT FINAL SCENE
+   Deliberately overrides all earlier contact declarations.
+   ========================================================= */
+.kv-contact{
+  min-height:100svh !important;
+  padding:0 6vw !important;
+  display:flex !important;
+  align-items:stretch !important;
+}
+.kv-contact-inner{
+  width:100% !important;
+  max-width:none !important;
+  min-height:100svh !important;
+  margin:0 !important;
+  padding:10vh 0 5vh !important;
+  box-sizing:border-box !important;
+  display:grid !important;
+  grid-template-rows:auto 1fr auto auto !important;
+  align-items:start !important;
+  position:relative !important;
+}
+.kv-contact .kv-kicker{
+  position:static !important;
+  margin:0 !important;
+  color:#b99668 !important;
+  font-family:Arial,Helvetica,sans-serif !important;
+  font-size:10px !important;
+  line-height:1 !important;
+  letter-spacing:.32em !important;
+  text-transform:uppercase !important;
+}
+.kv-contact h2{
+  align-self:center !important;
+  margin:0 !important;
+  max-width:1100px !important;
+  font-family:"Libre Caslon Display",Georgia,serif !important;
+  font-size:clamp(88px,10.2vw,160px) !important;
+  line-height:.84 !important;
+  font-weight:400 !important;
+  letter-spacing:-.06em !important;
+  color:#f0ece5 !important;
+}
+.kv-email{
+  justify-self:start !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  gap:18px !important;
+  margin:0 0 7vh !important;
+  padding:0 0 12px !important;
+  border-bottom:1px solid rgba(238,234,227,.18) !important;
+  font-family:"Libre Caslon Display",Georgia,serif !important;
+  font-size:clamp(30px,3vw,48px) !important;
+  line-height:1.1 !important;
+  font-weight:400 !important;
+  letter-spacing:-.025em !important;
+  color:#aaa39a !important;
+  transition:color .35s ease,border-color .35s ease !important;
+}
+.kv-email-arrow{
+  color:#b99668 !important;
+  font-family:Arial,Helvetica,sans-serif !important;
+  font-size:.55em !important;
+  transform:translateY(-.15em) !important;
+  transition:transform .35s ease !important;
+}
+.kv-email:hover{
+  color:#f0ece5 !important;
+  border-color:#b99668 !important;
+}
+.kv-email:hover .kv-email-arrow{
+  transform:translate(.22em,-.37em) !important;
+}
+.kv-contact-meta{
+  width:100% !important;
+  padding-top:22px !important;
+  border-top:1px solid rgba(238,234,227,.10) !important;
+  display:flex !important;
+  justify-content:space-between !important;
+  gap:24px !important;
+}
+.kv-contact-meta p{
+  margin:0 !important;
+  color:#66615b !important;
+  font-family:Arial,Helvetica,sans-serif !important;
+  font-size:9px !important;
+  line-height:1.4 !important;
+  letter-spacing:.16em !important;
+  text-transform:uppercase !important;
+}
+.kv-contact-inner::after{display:none !important}
+.kv-location{display:none !important}
+
+@media(max-width:820px){
+  .kv-contact{padding:0 7vw !important}
+  .kv-contact-inner{padding:9vh 0 4vh !important}
+  .kv-contact h2{
+    font-size:clamp(64px,18vw,100px) !important;
+    line-height:.88 !important;
+  }
+  .kv-email{
+    font-size:clamp(25px,7vw,36px) !important;
+    margin-bottom:6vh !important;
+  }
+  .kv-contact-meta{
+    align-items:flex-end !important;
+  }
+}
+
+
+/* =========================================================
+   V11 — APPROACH ASYMMETRIC STACK
+   Keeps V10 Contact and approved compact menu untouched.
+   ========================================================= */
+.kv-approach{
+  min-height:100svh !important;
+  padding:0 6vw !important;
+  display:flex !important;
+  align-items:center !important;
+}
+.kv-approach-inner{
+  position:relative !important;
+  width:100% !important;
+  max-width:none !important;
+  min-height:76vh !important;
+  margin:0 !important;
+  display:block !important;
+}
+.kv-approach .kv-kicker{
+  margin:0 0 6vh !important;
+  color:#b99668 !important;
+  font-family:Arial,Helvetica,sans-serif !important;
+  font-size:10px !important;
+  line-height:1 !important;
+  letter-spacing:.31em !important;
+  text-transform:uppercase !important;
+}
+.kv-approach h2{
+  margin:0 !important;
+  max-width:1120px !important;
+  font-family:"Libre Caslon Display",Georgia,serif !important;
+  font-size:clamp(74px,8vw,126px) !important;
+  line-height:.92 !important;
+  font-weight:400 !important;
+  letter-spacing:-.055em !important;
+  color:#f0ece5 !important;
+}
+.kv-approach h2 span{
+  color:#969088 !important;
+}
+.kv-approach-stack{
+  position:absolute !important;
+  right:2vw !important;
+  bottom:2vh !important;
+  width:min(430px,33vw) !important;
+  display:flex !important;
+  flex-direction:column !important;
+  gap:13px !important;
+  align-items:flex-start !important;
+}
+.kv-approach-stack p{
+  margin:0 !important;
+  font-family:"DM Sans",Arial,Helvetica,sans-serif !important;
+  font-size:clamp(14px,1.2vw,18px) !important;
+  line-height:1.45 !important;
+  font-weight:300 !important;
+  letter-spacing:.01em !important;
+  text-transform:none !important;
+}
+.kv-approach-stack p:nth-child(1){color:#c6c0b7 !important}
+.kv-approach-stack p:nth-child(2){color:#8d8881 !important}
+.kv-approach-stack p:nth-child(3){color:#67635e !important}
+.kv-approach-stack::before{
+  content:"" !important;
+  display:block !important;
+  width:56px !important;
+  height:1px !important;
+  background:#a98558 !important;
+  margin-bottom:20px !important;
+  opacity:.75 !important;
+}
+
+/* hide prior horizontal principle constructs if any remain */
+.kv-principles{display:none !important}
+
+@media(max-width:820px){
+  .kv-approach{padding:0 7vw !important}
+  .kv-approach-inner{min-height:78vh !important}
+  .kv-approach h2{
+    font-size:clamp(60px,17vw,92px) !important;
+    line-height:.9 !important;
+  }
+  .kv-approach-stack{
+    position:absolute !important;
+    left:0 !important;
+    right:auto !important;
+    bottom:1vh !important;
+    width:100% !important;
+  }
+  .kv-approach-stack p{
+    font-size:14px !important;
+  }
+}

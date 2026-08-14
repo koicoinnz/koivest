@@ -52,4 +52,10 @@ V6 removes secondary menu descriptors, report-style numbering, and the Ideas/Bus
 
 V6 changes the navigation into a compact top-right popover with four simple links.
 
-V8 increases editorial scale and rebuilds Approach/Contact composition while preserving the compact V6/V7 menu.
+V9 increases editorial scale and rebuilds Approach/Contact composition while preserving the compact V6/V7 menu.
+
+V9 adds cache-busting query strings to styles.css and script.js so GitHub Pages always serves the latest visual update.
+
+V10 preserves the approved Approach/Menu and redesigns only Contact as a full-screen editorial closing scene.
+
+V11 redesigns Approach using an asymmetric lower-right three-line principle stack; Contact remains V10.
