@@ -1,4 +1,4 @@
-# Koivest Production Prototype V4
+# Koivest Production Prototype V6
 
 This is a static production prototype designed for direct deployment to GitHub Pages.
 
@@ -45,5 +45,9 @@ Black / charcoal base, warm ivory typography, restrained champagne-gold particle
 - Reduced visual noise and restrained gold usage.
 
 
-## V4 direction
+## V6 direction
 Locked to the original black / champagne-gold visual language: quiet, cinematic, restrained. Rebuilt from V2 and discarded the V3 design direction.
+
+V6 removes secondary menu descriptors, report-style numbering, and the Ideas/Businesses/Capital contact treatment.
+
+V6 changes the navigation into a compact top-right popover with four simple links.
