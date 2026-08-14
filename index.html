@@ -22,12 +22,19 @@
   </header>
 
   <aside class="menu-panel" id="menuPanel" aria-hidden="true">
-    <nav>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#approach">Approach</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="menu-shell">
+      <div class="menu-small">KOIVEST / NAVIGATION</div>
+      <nav class="menu-nav">
+        <a href="#about"><span>About</span><i>↘</i></a>
+        <a href="#portfolio"><span>Portfolio</span><i>↘</i></a>
+        <a href="#approach"><span>Approach</span><i>↘</i></a>
+        <a href="#contact"><span>Contact</span><i>↘</i></a>
+      </nav>
+      <div class="menu-foot">
+        <span>Auckland, New Zealand</span>
+        <a href="mailto:hello@koivest.co.nz">hello@koivest.co.nz</a>
+      </div>
+    </div>
   </aside>
 
   <main>
@@ -60,8 +67,10 @@
           </div>
           <div class="story-state final-state" data-step="about" id="about">
             <p class="eyebrow">ABOUT KOIVEST</p>
-            <h2>An investment &amp; operating company<br>built for the long term.</h2>
-            <p class="story-body">We build, operate and invest in businesses where patient capital, disciplined execution and long-term thinking can create enduring value.</p>
+            <h2>An investment &amp; operating company<br><span>built for the long term.</span></h2>
+            <div class="about-mini">
+              <span>BUILD</span><i></i><span>OPERATE</span><i></i><span>ALLOCATE</span>
+            </div>
           </div>
         </div>
 
@@ -99,37 +108,40 @@
     </section>
 
     <section class="approach section-space" id="approach">
-      <div class="section-label">OUR APPROACH</div>
-      <div class="approach-grid">
-        <div class="approach-intro">
-          <h2>We think long term.<br>We build value that lasts.</h2>
-        </div>
+      <div class="approach-top">
+        <div class="section-label">OUR APPROACH</div>
+        <p>Long-term ownership. Operating discipline. Deliberate capital allocation.</p>
+      </div>
+      <div class="approach-main">
+        <h2>We think long term.<br><span>We build value that lasts.</span></h2>
         <div class="principle-list">
-          <button class="principle active" data-copy="We invest with a multi-year perspective and prefer durable economics over short-term optics.">Long-term mindset</button>
-          <button class="principle" data-copy="We stay close to the operating reality and improve businesses through disciplined execution.">Operational excellence</button>
-          <button class="principle" data-copy="Capital goes where expected returns, downside protection and conviction are strongest.">Disciplined capital</button>
-          <button class="principle" data-copy="We prefer partners whose incentives and time horizons align with ours.">Aligned interests</button>
+          <button class="principle active" data-copy="We invest with a multi-year perspective and prefer durable economics over short-term optics."><span>Long-term mindset</span><i>↗</i></button>
+          <button class="principle" data-copy="We stay close to the operating reality and improve businesses through disciplined execution."><span>Operational excellence</span><i>↗</i></button>
+          <button class="principle" data-copy="Capital goes where expected returns, downside protection and conviction are strongest."><span>Disciplined capital</span><i>↗</i></button>
+          <button class="principle" data-copy="We prefer partners whose incentives and time horizons align with ours."><span>Aligned interests</span><i>↗</i></button>
           <p class="principle-copy" id="principleCopy">We invest with a multi-year perspective and prefer durable economics over short-term optics.</p>
         </div>
       </div>
     </section>
 
     <section class="contact section-space" id="contact">
-      <div class="contact-kicker">CONTACT</div>
-      <div class="contact-display" aria-label="Ideas. Businesses. Capital.">
-        <span>Ideas.</span>
-        <span>Businesses.</span>
-        <span class="accent">Capital.</span>
+      <div class="contact-topline">
+        <span>CONTACT</span>
+        <span>AUCKLAND · NEW ZEALAND</span>
       </div>
-      <div class="contact-bottom">
-        <p>We are interested in enduring businesses, thoughtful partnerships and opportunities where active ownership can create long-term value.</p>
-        <a class="contact-cta" href="mailto:hello@koivest.co.nz">
-          <span>Start a conversation</span><b>↗</b>
+
+      <div class="contact-stage">
+        <p class="contact-lead">Have something worth building?</p>
+        <a class="contact-email" href="mailto:hello@koivest.co.nz">
+          <span>hello@koivest.co.nz</span>
+          <i>↗</i>
         </a>
       </div>
-      <div class="contact-meta">
-        <span>Auckland, New Zealand</span>
-        <span>Building enduring value.</span>
+
+      <div class="contact-tags">
+        <span>Ideas</span>
+        <span>Businesses</span>
+        <span>Capital</span>
       </div>
     </section>
   </main>

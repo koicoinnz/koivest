@@ -1,4 +1,4 @@
-# Koivest Production Prototype V2
+# Koivest Production Prototype V3
 
 This is a static production prototype designed for direct deployment to GitHub Pages.
 
@@ -43,3 +43,11 @@ Black / charcoal base, warm ivory typography, restrained champagne-gold particle
 - Refined typography and spacing across Story, Portfolio and Approach.
 - Rebuilt the closing Contact scene around an editorial Ideas / Businesses / Capital composition.
 - Reduced visual noise and restrained gold usage.
+
+
+## V3 changes
+- Rebuilt menu as a modern interactive navigation overlay.
+- Simplified About to a single high-impact transition statement.
+- Reworked Approach into a lighter interactive web section.
+- Rebuilt Contact as an interactive email CTA rather than a static poster page.
+- Reduced the overall PDF / presentation feel and increased web-native interaction.
