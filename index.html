@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#050505" />
+  <meta name="description" content="Koivest — an investment and operating company built for the long term." />
+  <title>Koivest — Building Enduring Value</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">
+      <span>MENU</span>
+      <i></i><i></i>
+    </button>
+  </header>
+
+  <aside class="menu-panel" id="menuPanel" aria-hidden="true">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section class="hero full-screen" id="hero">
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero-center">
+        <h1>KOIVEST</h1>
+        <p>BUILDING ENDURING VALUE</p>
+      </div>
+      <div class="scroll-cue">
+        <span>SCROLL</span>
+        <i></i>
+        <b>↓</b>
+      </div>
+    </section>
+
+    <section class="story-pin" id="story">
+      <div class="story-sticky">
+        <canvas id="storyCanvas" aria-hidden="true"></canvas>
+
+        <div class="story-copy">
+          <div class="story-state is-active" data-step="build">
+            <h2>We <em>build.</em></h2>
+          </div>
+          <div class="story-state" data-step="operate">
+            <h2>We <em>operate.</em></h2>
+          </div>
+          <div class="story-state" data-step="allocate">
+            <h2>We <em>allocate.</em></h2>
+          </div>
+          <div class="story-state final-state" data-step="about">
+            <p class="eyebrow">ABOUT KOIVEST</p>
+            <h2>An investment &amp; operating company<br>built for the long term.</h2>
+            <p class="story-body">We build, operate and invest in businesses where patient capital, disciplined execution and long-term thinking can create enduring value.</p>
+          </div>
+        </div>
+
+        <div class="story-progress" aria-hidden="true">
+          <span class="active"></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-space" id="about">
+      <div class="section-label">ABOUT</div>
+      <div class="about-grid">
+        <h2>Built with an owner’s mindset.</h2>
+        <div class="body-copy">
+          <p>Koivest is a New Zealand investment and operating company focused on creating, owning and developing businesses with durable economics and long-term potential.</p>
+          <p>We combine entrepreneurial execution with disciplined capital allocation — improving what we own, building what should exist, and reinvesting where conviction is strongest.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="section-label inside">PORTFOLIO</div>
+
+      <article class="venture venture-koicoin">
+        <div class="venture-media koicoin-visual" aria-hidden="true">
+          <div class="room-line"></div>
+          <div class="room-glow"></div>
+        </div>
+        <div class="venture-copy">
+          <div class="venture-meta">OPERATING · AUCKLAND, NEW ZEALAND</div>
+          <h2>KOICOIN</h2>
+          <p class="venture-sector">Hospitality &amp; Entertainment</p>
+          <p>A premium KTV and hospitality venue built around private entertainment, food, beverage and social experience.</p>
+        </div>
+      </article>
+
+      <article class="venture venture-koinex">
+        <canvas id="networkCanvas" aria-hidden="true"></canvas>
+        <div class="venture-copy">
+          <div class="venture-meta">BUILDING · NEW ZEALAND</div>
+          <h2>KOINEX</h2>
+          <p class="venture-sector">Foreign Exchange &amp; Financial Infrastructure</p>
+          <p>A next-generation foreign exchange venture exploring physical distribution, self-service infrastructure, online access and partner networks.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="approach section-space" id="approach">
+      <div class="section-label">OUR APPROACH</div>
+      <div class="approach-grid">
+        <div class="approach-intro">
+          <h2>We think long term.<br>We build value that lasts.</h2>
+        </div>
+        <div class="principle-list">
+          <button class="principle active" data-copy="We invest with a multi-year perspective and prefer durable economics over short-term optics.">Long-term mindset</button>
+          <button class="principle" data-copy="We stay close to the operating reality and improve businesses through disciplined execution.">Operational excellence</button>
+          <button class="principle" data-copy="Capital goes where expected returns, downside protection and conviction are strongest.">Disciplined capital</button>
+          <button class="principle" data-copy="We prefer partners whose incentives and time horizons align with ours.">Aligned interests</button>
+          <p class="principle-copy" id="principleCopy">We invest with a multi-year perspective and prefer durable economics over short-term optics.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-space" id="contact">
+      <div class="contact-line">
+        <p>START A CONVERSATION</p>
+        <a href="mailto:hello@koivest.co.nz">hello@koivest.co.nz ↗</a>
+      </div>
+      <h2>Ideas. Businesses.<br>Capital.</h2>
+      <div class="contact-meta">
+        <span>Auckland, New Zealand</span>
+        <span>An investment &amp; operating company built for the long term.</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-wordmark">KOIVEST</div>
+    <p>© <span id="year"></span> Koivest Limited. All rights reserved.</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
