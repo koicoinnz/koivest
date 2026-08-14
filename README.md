@@ -1,4 +1,4 @@
-# Koivest Production Prototype
+# Koivest Production Prototype V2
 
 This is a static production prototype designed for direct deployment to GitHub Pages.
 
@@ -36,3 +36,10 @@ No build system is required.
 
 ## Visual direction
 Black / charcoal base, warm ivory typography, restrained champagne-gold particles. Gold is intentionally used as an atmospheric accent rather than a dominant “black + gold luxury” treatment.
+
+
+## V2 refinements
+- Removed the duplicated standalone About section.
+- Refined typography and spacing across Story, Portfolio and Approach.
+- Rebuilt the closing Contact scene around an editorial Ideas / Businesses / Capital composition.
+- Reduced visual noise and restrained gold usage.
