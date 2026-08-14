@@ -160,11 +160,60 @@ class ScrollMorphParticles {
     c.restore();
   }
 
+
+  drawHeroMesh(){
+    const c=this.ctx,w=this.w,h=this.h;
+    c.save();
+    c.lineWidth=.55;
+
+    const rows=15;
+    const cols=80;
+
+    for(let r=0;r<rows;r++){
+      const v=r/(rows-1);
+      c.beginPath();
+      for(let i=0;i<cols;i++){
+        const u=i/(cols-1);
+        const env=Math.sin(Math.PI*u);
+        const band=(v-.5)*h*.23;
+        const y=h*.56+band+
+          Math.sin(u*8.8-this.t*.32+r*.23)*h*.065*env+
+          Math.sin(u*3.3+this.t*.13+r*.51)*h*.021;
+        const x=u*w;
+        if(i===0)c.moveTo(x,y);else c.lineTo(x,y);
+      }
+      const centerBias=1-Math.abs(v-.5)*1.6;
+      c.strokeStyle=`rgba(205,164,108,${.035+.05*Math.max(0,centerBias)})`;
+      c.stroke();
+    }
+
+    // sparse vertical connectors to create the mesh feel
+    c.lineWidth=.35;
+    for(let i=4;i<cols;i+=5){
+      const u=i/(cols-1);
+      c.beginPath();
+      for(let r=0;r<rows;r++){
+        const v=r/(rows-1);
+        const env=Math.sin(Math.PI*u);
+        const band=(v-.5)*h*.23;
+        const y=h*.56+band+
+          Math.sin(u*8.8-this.t*.32+r*.23)*h*.065*env+
+          Math.sin(u*3.3+this.t*.13+r*.51)*h*.021;
+        const x=u*w;
+        if(r===0)c.moveTo(x,y);else c.lineTo(x,y);
+      }
+      c.strokeStyle='rgba(205,164,108,.022)';
+      c.stroke();
+    }
+    c.restore();
+  }
+
   draw(){
     const c=this.ctx,w=this.w,h=this.h;
     c.clearRect(0,0,w,h);
     c.fillStyle='#050505';
     c.fillRect(0,0,w,h);
+    if(this.hero) this.drawHeroMesh();
 
     // Determine phase emphasis for secondary directional traces.
     let operateStrength=0, allocateStrength=0;
@@ -178,7 +227,7 @@ class ScrollMorphParticles {
     for(const p of this.points){
       const [x,y]=this.hero?this.heroPos(p):this.getStoryPos(p);
       const shimmer=.52+.48*Math.sin(this.t*.7+p.seed);
-      let alpha=(.11+.43*shimmer)*(.58+.42*p.z);
+      let alpha=(this.hero ? (.06+.24*shimmer) : (.11+.43*shimmer))*(.58+.42*p.z);
 
       // Stronger phase-specific visual cue without becoming flashy.
       if(!this.hero){
