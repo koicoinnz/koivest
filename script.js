@@ -46,7 +46,7 @@ class ScrollMorphParticles {
       v:Math.random(),
       z:Math.random(),
       seed:Math.random()*1000,
-      size:.25+Math.random()*.65
+      size:.42+Math.random()*.88
     }));
   }
   setProgress(v){this.progress=Math.max(0,Math.min(1,v))}
@@ -136,7 +136,7 @@ class ScrollMorphParticles {
         const y=h*(.34+lane*.055)+Math.sin(x/w*13-this.t*1.65+lane)*h*.012;
         if(x===-20)c.moveTo(x,y);else c.lineTo(x,y);
       }
-      c.strokeStyle=`rgba(192,151,98,${.055*strength})`;
+      c.strokeStyle=`rgba(192,151,98,${.085*strength})`;
       c.stroke();
     }
     c.restore();
@@ -154,7 +154,7 @@ class ScrollMorphParticles {
         w*.5+Math.cos(a)*Math.min(w,h)*.63,
         h*.5+Math.sin(a)*Math.min(w,h)*.42
       );
-      c.strokeStyle=`rgba(192,151,98,${.038*strength})`;
+      c.strokeStyle=`rgba(192,151,98,${.060*strength})`;
       c.stroke();
     }
     c.restore();
@@ -178,7 +178,7 @@ class ScrollMorphParticles {
     for(const p of this.points){
       const [x,y]=this.hero?this.heroPos(p):this.getStoryPos(p);
       const shimmer=.52+.48*Math.sin(this.t*.7+p.seed);
-      let alpha=(.055+.28*shimmer)*(.5+.5*p.z);
+      let alpha=(.11+.43*shimmer)*(.58+.42*p.z);
 
       // Stronger phase-specific visual cue without becoming flashy.
       if(!this.hero){
@@ -187,8 +187,8 @@ class ScrollMorphParticles {
       }
 
       c.beginPath();
-      c.arc(x,y,p.size*(.78+.42*p.z),0,Math.PI*2);
-      c.fillStyle=`rgba(205,166,112,${alpha})`;
+      c.arc(x,y,p.size*(.92+.50*p.z),0,Math.PI*2);
+      c.fillStyle=`rgba(216,174,116,${alpha})`;
       c.fill();
     }
 
