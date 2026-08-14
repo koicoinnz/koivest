@@ -51,3 +51,5 @@ Locked to the original black / champagne-gold visual language: quiet, cinematic,
 V6 removes secondary menu descriptors, report-style numbering, and the Ideas/Businesses/Capital contact treatment.
 
 V6 changes the navigation into a compact top-right popover with four simple links.
+
+V8 increases editorial scale and rebuilds Approach/Contact composition while preserving the compact V6/V7 menu.
