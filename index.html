@@ -10,17 +10,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css?v=16.3" />
+  <link rel="stylesheet" href="./koivest-trust.css?v=16.4" />
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
-
   <header class="site-header" id="siteHeader">
     <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">
       <span>MENU</span>
       <i></i><i></i>
     </button>
   </header>
-
   <aside class="menu-panel" id="menuPanel" aria-hidden="true">
     <nav class="quiet-menu">
       <a href="#about"><span>About</span></a>
@@ -29,7 +28,6 @@
       <a href="#contact"><span>Contact</span></a>
     </nav>
   </aside>
-
   <main>
     <section class="hero full-screen" id="hero">
       <canvas id="heroCanvas" aria-hidden="true"></canvas>
@@ -47,7 +45,6 @@
     <section class="story-pin" id="story">
       <div class="story-sticky">
         <canvas id="storyCanvas" aria-hidden="true"></canvas>
-
         <div class="story-copy">
           <div class="story-state is-active" data-step="build">
             <h2>We <em>build.</em></h2>
@@ -64,10 +61,8 @@
           </div>
         </div>
       </section>
-
     <section class="portfolio portfolio-v16" id="portfolio">
       <div class="section-label inside">PORTFOLIO</div>
-
       <article class="venture venture-koicoin v16-brand" aria-labelledby="koicoin-title">
         <div class="v16-art v16-architecture" aria-hidden="true">
           <svg class="v16-room-svg" viewBox="0 0 1200 670" preserveAspectRatio="xMidYMid meet">
@@ -95,7 +90,6 @@
         </div>
         <span class="v16-index" aria-hidden="true">01 / 02</span>
       </article>
-
       <article class="venture venture-koinex v16-brand" aria-labelledby="koinex-title">
         <canvas id="networkCanvas" aria-hidden="true"></canvas>
         <div class="v16-orbits" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
@@ -112,7 +106,6 @@
         <span class="v16-index" aria-hidden="true">02 / 02</span>
       </article>
     </section>
-
     <section class="kv-approach section-space" id="approach">
       <div class="kv-approach-inner">
         <div class="kv-approach-left">
@@ -126,7 +119,6 @@
         </div>
       </div>
     </section>
-
     <section class="kv-contact section-space" id="contact">
       <div class="kv-contact-inner">
         <div class="kv-contact-left">
@@ -140,7 +132,6 @@
       </div>
     </section>
   </main>
-
   <footer>
     <div class="footer-wordmark">KOIVEST</div>
     <p>© <span id="year"></span> Koivest Limited. All rights reserved.</p>
@@ -153,5 +144,6 @@
   </footer>
 
   <script src="./script.js?v=15.0"></script>
+  <script src="./koivest-trust.js?v=16.4"></script>
 </body>
 </html>
