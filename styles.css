@@ -1233,3 +1233,10 @@ body.menu-open::before{display:none !important}
 @keyframes v16-orbit{to{filter:brightness(1.5);opacity:.55;translate:0 -12px}}
 @media(max-width:760px){.portfolio-v16 .v16-brand{min-height:88svh;padding:130px 7vw 90px}.portfolio-v16 .v16-brand h2{font-size:clamp(62px,15vw,110px);letter-spacing:.035em}.portfolio-v16 .v16-eyebrow{font-size:9px;letter-spacing:.16em;margin-bottom:30px}.portfolio-v16 .v16-description{font-size:13px;line-height:1.75}.portfolio-v16 .v16-room-svg{width:155vw;max-width:none}.portfolio-v16 .v16-orbits i{width:100vw;height:44vw}.portfolio-v16 .v16-orbits i:nth-child(2){width:86vw;height:36vw}.portfolio-v16 .v16-orbits i:nth-child(3){width:75vw;height:29vw}.portfolio-v16 .v16-orbits i:nth-child(4){width:120vw;height:52vw}.portfolio-v16 .v16-orbits i:nth-child(5){width:64vw;height:22vw}.portfolio-v16 .v16-index{bottom:30px}}
 @media(prefers-reduced-motion:reduce){.portfolio-v16 .v16-room-svg,.portfolio-v16 .v16-orbits i{animation:none}}
+
+/* V16.1 — KOINEX copy readability only */
+.portfolio-v16 .venture-koinex .v16-brand-copy{width:min(850px,90vw)}
+.portfolio-v16 .venture-koinex .v16-koinex-description{max-width:680px;width:100%;margin:0 auto;text-align:left;font-size:14px;line-height:1.85;letter-spacing:.005em;text-wrap:pretty}
+.portfolio-v16 .venture-koinex .v16-koinex-description-second{margin-top:14px}
+.portfolio-v16 .venture-koinex .v16-fsp{margin-top:25px}
+@media(max-width:760px){.portfolio-v16 .venture-koinex .v16-koinex-description{max-width:100%;font-size:13px;line-height:1.75}.portfolio-v16 .venture-koinex .v16-koinex-description-second{margin-top:12px}}
