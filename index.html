@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css?v=15.0" />
+  <link rel="stylesheet" href="./styles.css?v=16.0" />
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -65,31 +65,48 @@
         </div>
       </section>
 
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio portfolio-v16" id="portfolio">
       <div class="section-label inside">PORTFOLIO</div>
 
-      <article class="venture venture-koicoin">
-        <div class="venture-media koicoin-visual" aria-hidden="true">
-          <div class="room-line"></div>
-          <div class="room-glow"></div>
+      <article class="venture venture-koicoin v16-brand" aria-labelledby="koicoin-title">
+        <div class="v16-art v16-architecture" aria-hidden="true">
+          <svg class="v16-room-svg" viewBox="0 0 1200 670" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <linearGradient id="roomGold" x1="0" x2="1"><stop offset="0" stop-color="#6e4e30" stop-opacity=".05"/><stop offset=".52" stop-color="#d7ae79" stop-opacity=".72"/><stop offset="1" stop-color="#6e4e30" stop-opacity=".08"/></linearGradient>
+              <radialGradient id="roomGlow"><stop stop-color="#b88b53" stop-opacity=".15"/><stop offset="1" stop-color="#b88b53" stop-opacity="0"/></radialGradient>
+            </defs>
+            <ellipse cx="600" cy="350" rx="430" ry="280" fill="url(#roomGlow)"/>
+            <g class="v16-room-lines" fill="none" stroke="url(#roomGold)" stroke-width="1">
+              <path d="M600 260 L60 25 M600 260 L1140 25 M600 260 L60 645 M600 260 L1140 645"/>
+              <path d="M600 260 L250 80 L950 80 Z M600 260 L250 590 L950 590 Z"/>
+              <path d="M600 260 L355 128 L845 128 Z M600 260 L355 535 L845 535 Z"/>
+              <path d="M600 260 L435 166 L765 166 Z M600 260 L435 482 L765 482 Z"/>
+              <path d="M600 260 L500 199 L700 199 Z M600 260 L500 424 L700 424 Z"/>
+              <path d="M60 25 V645 M1140 25 V645 M250 80 V590 M950 80 V590 M355 128 V535 M845 128 V535 M435 166 V482 M765 166 V482 M500 199 V424 M700 199 V424"/>
+            </g>
+            <path d="M600 260 L600 600" stroke="#cba16e" stroke-width=".7" opacity=".24"/>
+          </svg>
         </div>
-        <div class="venture-copy">
-          <div class="venture-meta">OPERATING · AUCKLAND, NEW ZEALAND</div>
-          <h2>KOICOIN</h2>
-          <p class="venture-sector">Hospitality &amp; Entertainment</p>
-          <p>A premium hospitality and entertainment venue built around private rooms, food, beverage and social experience.</p>
+        <div class="v16-brand-copy">
+          <p class="v16-eyebrow">HOSPITALITY <span>—</span> AUCKLAND, NEW ZEALAND</p>
+          <h2 id="koicoin-title">KOICOIN</h2>
+          <p class="v16-sector">Café · KTV · Bar</p>
+          <p class="v16-description">A premium hospitality and entertainment venue built around private rooms, food, beverage and social experience.</p>
         </div>
+        <span class="v16-index" aria-hidden="true">01 / 02</span>
       </article>
 
-      <article class="venture venture-koinex">
+      <article class="venture venture-koinex v16-brand" aria-labelledby="koinex-title">
         <canvas id="networkCanvas" aria-hidden="true"></canvas>
-        <div class="venture-copy">
-          <div class="venture-meta">BUILDING · NEW ZEALAND</div>
-          <h2>KOINEX</h2>
-          <p class="venture-sector">Foreign Exchange &amp; Financial Infrastructure</p>
-          <p>KOINEX is a New Zealand-based foreign exchange venture operated by KOIVEST LIMITED, registered on the Financial Service Providers Register for changing foreign currency. Focused on accessible currency exchange, KOINEX is developing a service model spanning physical locations, digital access and strategic partnerships.</p>
-          <p class="venture-fsp">KOIVEST LIMITED · FSP1013286</p>
+        <div class="v16-orbits" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="v16-brand-copy">
+          <p class="v16-eyebrow">FOREIGN EXCHANGE <span>—</span> NEW ZEALAND</p>
+          <h2 id="koinex-title">KOINEX</h2>
+          <p class="v16-sector">Foreign Exchange &amp; Financial Infrastructure</p>
+          <p class="v16-description">KOINEX is a New Zealand-based foreign exchange venture operated by KOIVEST LIMITED, registered on the Financial Service Providers Register for changing foreign currency. Focused on accessible currency exchange, KOINEX is developing a service model spanning physical locations, digital access and strategic partnerships.</p>
+          <p class="v16-fsp">KOIVEST LIMITED <span>·</span> FSP1013286</p>
         </div>
+        <span class="v16-index" aria-hidden="true">02 / 02</span>
       </article>
     </section>
 

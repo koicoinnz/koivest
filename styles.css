@@ -1204,3 +1204,32 @@ body.menu-open::before{display:none !important}
   }
   .kv-contact-inner{padding:10vh 0 !important}
 }
+
+
+/* V16 — portfolio-only redesign; other sections untouched */
+.portfolio-v16{background:#050505}
+.portfolio-v16 .v16-brand{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:145px 6vw 95px;isolation:isolate;overflow:hidden}
+.portfolio-v16 .v16-brand-copy{position:relative;z-index:4;width:min(800px,90vw);margin:0 auto;text-align:center}
+.portfolio-v16 .v16-eyebrow{font-size:10px;letter-spacing:.27em;color:#c19b6a;margin:0 0 38px;text-transform:uppercase}
+.portfolio-v16 .v16-eyebrow span{color:#605443;margin:0 9px}
+.portfolio-v16 .v16-brand h2{font-family:"Libre Caslon Display",Georgia,serif;font-size:clamp(86px,12vw,180px);font-weight:400;line-height:.92;letter-spacing:.065em;color:#eeeae4;margin:0 0 22px;text-shadow:0 3px 45px #050505}
+.portfolio-v16 .v16-sector{color:#c09a6b;font-size:11px;letter-spacing:.22em;text-transform:uppercase;margin:0 0 32px}
+.portfolio-v16 .v16-description{max-width:540px;margin:0 auto;color:#aaa39a;font-size:14px;line-height:1.85;letter-spacing:.005em}
+.portfolio-v16 .v16-fsp{font-size:10px;letter-spacing:.18em;color:#c4a078;margin:26px 0 0}
+.portfolio-v16 .v16-fsp span{padding:0 8px;color:#76614b}
+.portfolio-v16 .v16-index{position:absolute;z-index:5;bottom:42px;right:6vw;font-size:10px;letter-spacing:.18em;color:#777067}
+.portfolio-v16 .v16-art{position:absolute;inset:0;z-index:0;pointer-events:none}
+.portfolio-v16 .v16-architecture{display:flex;align-items:center;justify-content:center;opacity:.76;mask-image:linear-gradient(to bottom,transparent 4%,black 29%,black 76%,transparent 99%)}
+.portfolio-v16 .v16-room-svg{width:min(1120px,110vw);height:auto;max-height:85vh;animation:v16-breathe 14s ease-in-out infinite alternate}
+@keyframes v16-breathe{from{transform:scale(.97);opacity:.67}to{transform:scale(1.045);opacity:1}}
+.portfolio-v16 .venture-koinex{background:radial-gradient(ellipse at 50% 53%,#15110d 0%,#070707 53%,#050505 82%)}
+.portfolio-v16 #networkCanvas{z-index:1;opacity:.44;pointer-events:none}
+.portfolio-v16 .v16-orbits{position:absolute;inset:0;z-index:2;pointer-events:none;display:flex;align-items:center;justify-content:center;opacity:.65}
+.portfolio-v16 .v16-orbits i{position:absolute;width:min(74vw,850px);height:min(27vw,300px);border:1px solid rgba(191,147,91,.20);border-radius:50%;transform:rotate(-24deg);box-shadow:0 0 35px rgba(176,127,72,.025);animation:v16-orbit 20s ease-in-out infinite alternate}
+.portfolio-v16 .v16-orbits i:nth-child(2){width:min(62vw,710px);height:min(22vw,255px);transform:rotate(-7deg);border-color:rgba(196,153,99,.16);animation-delay:-4s}
+.portfolio-v16 .v16-orbits i:nth-child(3){width:min(53vw,610px);height:min(17vw,195px);transform:rotate(18deg);border-color:rgba(196,153,99,.24);animation-delay:-8s}
+.portfolio-v16 .v16-orbits i:nth-child(4){width:min(84vw,960px);height:min(32vw,365px);transform:rotate(38deg);border-color:rgba(196,153,99,.10);animation-delay:-12s}
+.portfolio-v16 .v16-orbits i:nth-child(5){width:min(43vw,500px);height:min(13vw,145px);transform:rotate(-38deg);border-color:rgba(196,153,99,.16);animation-delay:-15s}
+@keyframes v16-orbit{to{filter:brightness(1.5);opacity:.55;translate:0 -12px}}
+@media(max-width:760px){.portfolio-v16 .v16-brand{min-height:88svh;padding:130px 7vw 90px}.portfolio-v16 .v16-brand h2{font-size:clamp(62px,15vw,110px);letter-spacing:.035em}.portfolio-v16 .v16-eyebrow{font-size:9px;letter-spacing:.16em;margin-bottom:30px}.portfolio-v16 .v16-description{font-size:13px;line-height:1.75}.portfolio-v16 .v16-room-svg{width:155vw;max-width:none}.portfolio-v16 .v16-orbits i{width:100vw;height:44vw}.portfolio-v16 .v16-orbits i:nth-child(2){width:86vw;height:36vw}.portfolio-v16 .v16-orbits i:nth-child(3){width:75vw;height:29vw}.portfolio-v16 .v16-orbits i:nth-child(4){width:120vw;height:52vw}.portfolio-v16 .v16-orbits i:nth-child(5){width:64vw;height:22vw}.portfolio-v16 .v16-index{bottom:30px}}
+@media(prefers-reduced-motion:reduce){.portfolio-v16 .v16-room-svg,.portfolio-v16 .v16-orbits i{animation:none}}
