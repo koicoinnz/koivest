@@ -1240,3 +1240,8 @@ body.menu-open::before{display:none !important}
 .portfolio-v16 .venture-koinex .v16-koinex-description-second{margin-top:14px}
 .portfolio-v16 .venture-koinex .v16-fsp{margin-top:25px}
 @media(max-width:760px){.portfolio-v16 .venture-koinex .v16-koinex-description{max-width:100%;font-size:13px;line-height:1.75}.portfolio-v16 .venture-koinex .v16-koinex-description-second{margin-top:12px}}
+
+/* V16.3: narrow centered KOINEX text block, left-aligned paragraphs */
+.portfolio-v16 .venture-koinex .v163-koinex-copy{box-sizing:border-box;color:#aaa6a1;font-size:clamp(13px,1.08vw,16px);letter-spacing:.005em;line-height:1.85;text-align:left}
+.portfolio-v16 .venture-koinex .v163-koinex-copy p{text-align:left!important;text-wrap:pretty}
+@media(max-width:600px){.portfolio-v16 .venture-koinex .v163-koinex-copy{width:min(100%,440px)!important;margin-top:25px!important;padding:0 5px;font-size:13px}}
